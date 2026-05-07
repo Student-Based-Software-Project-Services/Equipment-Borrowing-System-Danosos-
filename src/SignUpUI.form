@@ -69,7 +69,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="pnlLogIn">
+    <Container class="javax.swing.JPanel" name="pnlSignUp">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
@@ -89,10 +89,10 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="lblWelcomeBack" alignment="0" max="32767" attributes="0"/>
-                              <Component id="lblLogIn" alignment="0" max="32767" attributes="0"/>
+                              <Component id="lblSignUp" alignment="0" max="32767" attributes="0"/>
+                              <Component id="lblRegisterAccount" alignment="0" max="32767" attributes="0"/>
                               <Component id="lblPassword" alignment="0" max="32767" attributes="0"/>
-                              <Component id="lblUsername" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btnUsername" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -101,10 +101,10 @@
                               <Component id="chckbtnShowPassword" min="-2" pref="130" max="-2" attributes="0"/>
                               <Component id="txtInputUsername" max="32767" attributes="0"/>
                               <Component id="txtpInputPassword" alignment="0" pref="265" max="32767" attributes="0"/>
-                              <Component id="btnLogIn" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btnSignIn" alignment="0" max="32767" attributes="0"/>
                               <Component id="jSeparator1" alignment="1" max="32767" attributes="0"/>
-                              <Component id="lblNoAccount" max="32767" attributes="0"/>
-                              <Component id="btnGoToSignUp" max="32767" attributes="0"/>
+                              <Component id="lblHasAccount" max="32767" attributes="0"/>
+                              <Component id="btnGoToLogIn" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
@@ -116,11 +116,11 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                  <Component id="lblWelcomeBack" min="-2" pref="56" max="-2" attributes="0"/>
+                  <Component id="lblSignUp" min="-2" pref="56" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lblLogIn" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="lblRegisterAccount" min="-2" pref="26" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="lblUsername" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="btnUsername" min="-2" pref="25" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtInputUsername" min="-2" pref="32" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -130,35 +130,35 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="chckbtnShowPassword" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnLogIn" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="btnSignIn" min="-2" pref="30" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jSeparator1" min="-2" pref="11" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lblNoAccount" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblHasAccount" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnGoToSignUp" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="btnGoToLogIn" min="-2" pref="30" max="-2" attributes="0"/>
                   <EmptySpace pref="12" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="lblWelcomeBack">
+        <Component class="javax.swing.JLabel" name="lblSignUp">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="24" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Welcome Back"/>
+            <Property name="text" type="java.lang.String" value="Sign Up"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblLogIn">
+        <Component class="javax.swing.JLabel" name="lblRegisterAccount">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Log in to your account"/>
+            <Property name="text" type="java.lang.String" value="Register your account"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblUsername">
+        <Component class="javax.swing.JLabel" name="btnUsername">
           <Properties>
             <Property name="text" type="java.lang.String" value="Username:"/>
           </Properties>
@@ -178,12 +178,12 @@
             <Property name="horizontalAlignment" type="int" value="2"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnLogIn">
+        <Component class="javax.swing.JButton" name="btnSignIn">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Log In"/>
+            <Property name="text" type="java.lang.String" value="Sign In"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogInActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSignInActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator1">
@@ -193,18 +193,18 @@
             <Property name="text" type="java.lang.String" value="Show Password"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblNoAccount">
+        <Component class="javax.swing.JLabel" name="lblHasAccount">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Don&apos;t have an account?"/>
+            <Property name="text" type="java.lang.String" value="Already have an account?"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnGoToSignUp">
+        <Component class="javax.swing.JButton" name="btnGoToLogIn">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Go to Sign Up"/>
+            <Property name="text" type="java.lang.String" value="Go to Log In"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGoToSignUpActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGoToLogInActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
